@@ -39,7 +39,7 @@
       </svg>
       <div class="navText">Knowledge Base</div>
       </a></li>
-    <li class="logout"><a href="index.html">
+    <li class="logout"><a href="loginPage.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out-icon lucide-log-out">
         <path d="m16 17 5-5-5-5"/>
         <path d="M21 12H9"/>
@@ -57,18 +57,28 @@
   <div class="container-fluid">
     <div class = "row h100" >
       <div class = "col-md-6">
+
         <div id = "user_tot" class = "dashboard_card">
           <h3>Total Users</h3>
           <p>3428 Total<br>
-            42 Active</p>
+            857 Active</p>
+          <div class="progress mt-2" style="height: 6px;">
+          <div class="progress-bar bg-info" style="width: 25%;"></div>
+          </div>
+          <small class="text-muted">25% currently active</small>
         </div>
+
       </div>
       <div class = "col-md-6">
         <div id = "pending_reg"  class = "dashboard_card">
           <h3>Pending Registrations</h3>
-          <p>4</p>
+          <p>4 Awaiting approval</p>
+          <p></p>
+          <button class="btn btn-sm btn-primary">Review Requests</button>
         </div>
+        
       </div>
+
       <div class = "col-md-6">
         <div id = "security" class = "dashboard_card">
           <h3>Security</h3>
@@ -105,13 +115,13 @@
       </div>
       <div class = "col-md-6">
         <div id = "tasks"  class = "dashboard_card">
-          <h3>Employee Progress</h3>
+          <h3>Server Usage</h3>
           <div id = "pie_chart container" style="width:280px; height:280px; margin:auto; align-items: center;">
             <canvas id="tasks_pie" style="width:100%;max-width:120px"></canvas>
             <script>
-                                const xValuesP = ["In Progress", "Completed"];
-                                const yValuesP = [12, 38]; 
-                                const pieColors = ["#ffc107", "#28a745"];
+                                const xValuesP = ["Used", "Free"];
+                                const yValuesP = [70, 30]; 
+                                const pieColors = ["blue", "#6c757d"];
 
                                 const ctx2 = document.getElementById('tasks_pie');
 
@@ -132,7 +142,7 @@
                                     },
                                     title: {
                                         display: true,
-                                        text: "Task Completion Status",
+                                        text: "System Load",
                                         font: { size: 16 }
                                     }
                                     }
@@ -147,4 +157,5 @@
 </div>
 </body>
 </html>
+
 
