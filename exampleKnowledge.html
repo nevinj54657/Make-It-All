@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
+<link href="styles.css" rel="stylesheet">
+<title>Make It All</title>
+	
+</head>
+
+<body>
+<nav>
+  <ul style="margin-top: 10px;">
+    <h2>Make it All</h2>
+    <li><a href="employeeDash.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-grid2x2-icon lucide-grid-2x2">
+        <path d="M12 3v18"/>
+        <path d="M3 12h18"/>
+        <rect x="3" y="3" width="18" height="18" rx="2"/>
+      </svg>
+      <div class="navText">Dashboard</div>
+      </a></li>
+    <li><a href="todoPage.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-checks-icon lucide-list-checks">
+        <path d="M13 5h8"/>
+        <path d="M13 12h8"/>
+        <path d="M13 19h8"/>
+        <path d="m3 17 2 2 4-4"/>
+        <path d="m3 7 2 2 4-4"/>
+      </svg>
+      <div class="navText">To-Do List</div>
+      </a></li>
+    <li><a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-check-icon lucide-book-open-check">
+        <path d="M12 21V7"/>
+        <path d="m16 12 2 2 4-4"/>
+        <path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3"/>
+      </svg>
+      <div class="navText">Knowledge Base</div>
+      </a></li>
+    <li class="logout"><a href="loginPage.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out-icon lucide-log-out">
+        <path d="m16 17 5-5-5-5"/>
+        <path d="M21 12H9"/>
+        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+      </svg>
+      <div class="navText">Logout</div>
+      </a></li>
+  </ul>
+</nav>
+<div class="mainBody">
+	<div class="secondaryBody" style="margin: 20px;">
+  <div class="nav-div">
+        <a class="button" href="knowledgePage.html" style="text-decoration: none; color: black; font-size: 16px;">←</a>
+        <p class="button">Edit</p>
+    </div>
+    <div class="knowledge-tag" style="background-color: #BADEFF;">
+        <p>Office Usage</p>
+    </div>
+    <section>
+        <h1>Printer Guide</h1>
+        <p style="border-bottom: 1px solid black; padding-bottom: 10px;">
+            Guide on how to use the printer in the office.
+        </p>
+
+        <div class="files">
+            <p>📄 Printer_Driver.pdf <span class="file-size">1.2MB</span></p>
+            <p class="download">↓</p>
+        </div>
+
+        <h2>Quick Print Steps</h2>
+        <ol>
+            <li>Turn on the printer (power button on the front). Wait until it finishes warming up.</li>
+            <li>Load paper into the main tray. Make sure the guides are snug against the paper stack.</li>
+            <li>From your computer, open the document and choose File → Print. Select the office printer from the list.
+            </li>
+            <li>Check settings: pages, color/black & white, duplex (double-sided), and number of copies.</li>
+            <li>If available and required, choose "Secure Print" or "Hold" and enter a release code; otherwise press
+                Print.</li>
+            <li>Go to the printer and, if using secure print, enter your release code at the printer to begin printing.
+                Collect your pages.</li>
+        </ol>
+
+        <h2>Copy & Scan</h2>
+        <ul>
+            <li>To copy: place the document on the glass or in the feeder, select Copy, choose number of copies and
+                quality, then Start.</li>
+            <li>To scan to email/folder: use the Scan function, enter the destination (email or network folder) and
+                Start. Check with IT for folder shortcuts or templates.</li>
+        </ul>
+
+        <h2>Troubleshooting</h2>
+        <ul>
+            <li>Paper jam: follow the on-screen prompts, remove jammed paper gently from the indicated location.</li>
+            <li>Low toner: a toner warning appears on the printer — leave enough toner for today and notify the office
+                admin/IT.</li>
+            <li>Print jobs not showing: ensure you're connected to the correct printer and clear the print queue, then
+                resend the job.</li>
+            <li>If persistent errors occur, power cycle the printer (turn off, wait 30 sec, turn on) and contact IT with
+                the printer model and error code.</li>
+        </ul>
+
+        <h2>Etiquette & Security</h2>
+        <ul>
+            <li>Collect your prints promptly to avoid exposing sensitive information.</li>
+            <li>Use secure/held printing for confidential documents and release them at the device.</li>
+        </ul>
+    </section>
+    <script src="knowledgebase.js" async defer></script>
+		</div>
+      </div>
+</body>
+</html>
